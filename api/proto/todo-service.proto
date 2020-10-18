@@ -59,7 +59,7 @@ message ReadAllResponse{
 //  string api = 1;
 //
 //}
-service ToDoservice{
+service ToDoService{
   rpc Create (CreateRequest)returns (CreateResponse);
   rpc Read (ReadRequest)returns (ReadResponse);
   rpc Update (UpdateRequest)returns (UpdateResponse);
