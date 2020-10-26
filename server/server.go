@@ -20,6 +20,8 @@ func RunServer(ctx context.Context, v1API v11.ToDoServiceServer, port string) er
 	go func() {
 		for range c {
 			log.Println("shutting down GRPC server...")
+			server.GracefulStop()
+			<-ctx.Done()
 		}
 	}()
 	log.Println("start gRPC server...")
