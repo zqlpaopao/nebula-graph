@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"flag"
 	"fmt"
-	"google.golang.org/grpc"
+	//"google.golang.org/grpc"
 	v1 "test/grpc/api/service/v1"
 	"test/grpc/server"
 )
